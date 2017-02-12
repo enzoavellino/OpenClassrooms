@@ -1,0 +1,1 @@
+console.log(Math.min(4.5, 5));
