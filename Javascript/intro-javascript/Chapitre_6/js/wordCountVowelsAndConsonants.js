@@ -1,6 +1,6 @@
 function countVowel(sentence) {
 	var nbVowel = 0;
-	var vowelList = 'aeiouyAEIOUY';
+	var vowelList = 'aeiouyAEIOUYÀÁÂÆÈÉÊËÌÍÎÏÒÓÔŒÙÚÛÜÝŸàáâæèéêëìíîïòóôœùúûüýÿ';
 
 	for (i = 0; i < sentence.length; i++) {
 		if (vowelList.indexOf(sentence[i]) !== -1) {
@@ -12,7 +12,7 @@ function countVowel(sentence) {
 
 function countConsonant(sentence) {
 	var nbConsonant = 0;
-	var consonantList = 'bcdfghjklmnpqrstvwxzBCDFGHJKLMNPQRSTVWXZ';
+	var consonantList = 'bcdfghjklmnpqrstvwxzBCDFGHJKLMNPQRSTVWXZÇÑçñ';
 
 	for (i = 0; i < sentence.length; i++) {
 		if (consonantList.indexOf(sentence[i]) !== -1) {
@@ -22,7 +22,7 @@ function countConsonant(sentence) {
 	return nbConsonant;
 }
 
-var motSaisi = prompt("Entrez votre mot: ");
+var motSaisi = prompt("Entrez votre mot avec ou sans accent: ");
 
 console.log("Ce mot a " + motSaisi.length + " caractères.");
 console.log("Voici ce mot en minuscule " + motSaisi.toLowerCase());
